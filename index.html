@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div>
+                <h1 class="title">Password Generator</h1>
+            </div>
+            <form action="" class="app" id="app">
+                <div class="row char">
+                    <div class="col">
+                        <label for="char">Number of Characters:</label>
+                    </div>
+                    <div class="col buttons">
+                        <div>
+                            <button class="btn" id="btn-minus"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div>
+                            <input type="text" id="char" readonly value="12">
+                        </div>
+                        <div>
+                            <button class="btn" id="btn-plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row symbol">
+                    <div class="col">
+                        <label for="symbol">Include Symbols?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-symbol"><i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+
+                <div class="row number">
+                    <div class="col">
+                        <label for="number">Include Numbers?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-number"><i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+
+                <div class="row uppercase">
+                    <div class="col">
+                        <label for="uppercase">Include Caps?</label>
+                    </div>
+                    <div class="col">
+                        <button class="btn" id="btn-uppercase"><i class="fas fa-check"></i></button>
+                    </div>
+                </div>
+
+                <div class="row generate">
+                    <div class="col">
+                        <button class="btn btn-generate" id="btn-generate">Generate <i class="fas fa-lock"></i></button>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="input-password" id="input-password" >
+                    </div>
+                </div>
+
+                <div class="row alert">
+                    <div class="col">
+                        <div class="alert-copied" id="alert-copied">
+                            <p><i class="fas fa-copy"></i> Copied!</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
